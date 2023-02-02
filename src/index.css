@@ -1,0 +1,394 @@
+@layer base {
+
+    html {
+        font-size: 62.5%;
+        height: 100%;
+    }
+    body{    
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+        height: 100%;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+
+    /* Header // Navegação ----------------------------------------
+    ---------------------------------------------------------------*/
+    header {
+      position: fixed;
+      top: 0;
+      z-index: 3;
+      width: 100%;
+      height: 8rem;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    nav {
+      font-size: 1.6rem;
+      font-weight: 600;
+      
+    }
+
+    .plink {
+      padding: 0 2rem 0 1rem;
+      transition: background 0.4s, color 0.4s;
+      letter-spacing: -0.04rem;
+      text-transform: capitalize;
+    }
+
+    .plink:hover {
+        color: #D2202C!important;
+    }
+
+    .plink:focus-within {
+      color: #707070;
+    }
+
+    nav button {
+      transition: background 0.4s, color 0.4s;
+    }
+
+    nav button:hover {
+      color: #fff;
+      background-color: #D2202C;
+    }
+
+    /* Container ---------------------------------------------------
+    ---------------------------------------------------------------*/
+
+    .mcontainer {
+      margin-top: 8rem;
+    }
+
+    .slide2 {
+      height: 60rem;
+      background-color: #D2202C;
+    }
+
+    .slide3 {
+      height: 60rem;
+      background-color: #323237;
+    }
+
+    .caixa {
+      width: 90rem;
+      margin: 9.6rem auto 0 auto;
+      
+    }
+
+    li.filtros {
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 0.6rem;
+      cursor: pointer;
+    }
+
+    li.filtros:hover {
+      border-bottom: 0.3rem solid #707070;     
+    }
+
+    li.filtros.active {
+      border-bottom: 0.3rem solid #707070;
+    }
+
+    .marcadores {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    /* Início / Listagem Modulos ------------------------------------
+    ---------------------------------------------------------------*/
+
+    .modulos-inicio {
+      width: 100%;
+      height: 13rem;
+      background-color: #F5F5F7;
+      border-radius: 1.8rem;
+    }
+
+    .modulos-inicio>img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 1.6rem;
+    }
+
+    .span-title {
+      width: 30rem;
+      line-height: 1.8rem;
+    }
+
+    .btn-ver-modulo {
+      border-radius: 2rem;
+      transition: background 0.6s;
+    }
+
+    .btn-ver-modulo:hover {
+      background-color: #323237;
+    }
+
+    .btn-ver-mais {
+      font-size: 2rem;
+      padding: 0.5rem 9.6rem;
+      margin: 3.8rem 0;
+      border-radius: 1.6rem;
+      transition: background 0.6s;
+    }
+
+    .btn-ver-mais:hover {
+      background-color: #323237;
+    }
+
+    /* Parceiros Inicio ---------------------------------------------
+    ---------------------------------------------------------------*/
+
+    .parceiros_ini {
+      width: 90rem;
+      height: 17rem;
+      margin-bottom: 10.4rem;
+      background-color: #F5F5F7;
+      border-radius: 1.8rem;
+    }
+
+    .parceiros_ini span h3 {
+      margin-top: 1.6rem;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .parceiros_ini span p {
+      color: #707070;
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 1.6rem;
+      text-align: center;
+    }
+
+    /* Cursos / Modulos --------------------------------------------
+    ---------------------------------------------------------------*/
+    
+    nav li {
+      cursor: pointer;
+    }
+
+    .filtroMod {
+      margin-bottom: 2rem;
+      padding-bottom: 0.6rem;
+      cursor: pointer;
+    }
+
+    .filtroMod:hover {
+      color: #707070;
+      border-bottom: 0.3rem solid #808080;   
+    }
+
+    .filtroMod.active {
+      color: #707070;
+      border-bottom: 0.3rem solid #808080;
+    }
+
+    .modulos-cursos{
+      width: 28rem;
+      border-radius: 1.8rem;
+    }
+
+    .modulos-cursos>img {
+      margin: 1rem 0;
+      width: 28rem;
+      height: 16rem;
+      border-radius: 1.6rem;
+    }
+
+    nav.paginacao button {
+      color: #505050;
+      font-size: 1.4rem;
+      padding: 0.5rem 1rem;
+      margin-top: 2rem;
+      border: 0.1rem solid #BBBBBB;
+    }
+
+    nav.paginacao button:hover {
+      color: #000;
+      border: 0.1rem solid #505050;
+      background-color: #fff;
+    }
+
+    nav .prev {
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+
+    nav .next {
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+
+    .pagina.ativa, .pagina.ativa:hover {
+      color: #fff;
+      background-color: #D2202C;
+    }
+
+    .prev.desativado, .next.desativado, .prev.desativado:hover, .next.desativado:hover {
+      color:#BBBBBB;
+      border: 0.1rem solid #BBBBBB;
+      cursor: default;
+    }
+
+    /* Modulo / Informaçoes Gerais ----------------------------------
+    ---------------------------------------------------------------*/
+
+    .topo {
+      width: 100%;
+      height: 22rem;
+      background-position: top;
+    }
+
+    .efeito-topo {
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    /* Transparência -----------------------------------------------
+    ---------------------------------------------------------------*/
+
+    .transparencia-dados {
+      width: 100%;
+      height: 25.6rem;
+      border-radius: 2rem;
+      background-color: #F5F5F7;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .transparencia-cursos, .transparencia-usuarios {
+      height: 54rem;
+      border-radius: 2rem;
+      background-color: #F5F5F7;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .linha2 span p {
+      margin-left: 0.6rem;
+      text-align: center;
+      color: #323237;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .linha2 span {
+      display: flex;
+    }
+
+    .transparencia-dados h2, .transparencia-cursos h2, .transparencia-usuarios h2 {
+      text-align: center;
+      color:#D2202C;
+    }
+
+    .transparencia-cursos h3, .transparencia-usuarios h3 {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    /* Footer -----------------------------------------------------
+    ---------------------------------------------------------------*/
+
+    footer .plink {
+      padding: 0.4rem 0;
+      transition: background 0.4s, color 0.4s;
+      letter-spacing: -0.04rem;
+    }
+
+    footer .plink:hover {
+      color: #707070!important;
+    }
+
+    footer h2 {
+      font-size: 2.1rem;
+      text-transform: capitalize;
+    }
+
+    .hfooter1 {
+      height: 18.3rem;
+      width: 100%;
+    }
+
+    .hfooter2 {
+      height: 26.6rem;
+      width: 100%;
+    }
+
+    .hfooter3 {
+      height: 6.8rem;
+      width: 100%;
+    }
+
+    .filtro {
+      position: absolute;
+      width: 100%;
+      height: 100rem;
+      background-color: rgba(82, 45, 45, 0.4);
+      text-align: center;
+    }
+
+}
+
+/* Swiper Carousel Custom---------------------------------------
+---------------------------------------------------------------*/
+  .swiper-pagination-bullet {
+    margin-bottom: 5rem!important;
+    width: 1.3rem;
+    height: 1.3rem;
+    opacity: 100%;
+    background: none;
+    border: 0.07rem solid #fff;
+    align-items: center;
+  }  
+
+  .swiper-pagination-bullet-active {
+    width: 4rem;
+    height: 1.2rem;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    transition: width 0.5s;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    width: 5.5rem;
+    height: 5.5rem;
+    color: rgba(0, 0, 0, 0);
+    transition: width 0.3s, height 0.3s;
+  }
+
+  .swiper-button-prev:hover, .swiper-button-next:hover {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .swiper-button-prev {
+    margin-left: 4.4rem;
+    background: url(../public/arrow-left.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .swiper-button-next {
+    margin-right: 4.4rem;
+    background: url(../public/arrow-right.svg) no-repeat;
+    background-size: contain;
+  }
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
