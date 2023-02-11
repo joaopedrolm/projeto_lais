@@ -5,6 +5,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'tablet': '640px',
+      'desktop': '1280px',
+    },
     extend: {
       colors: {
         'link-color': '#2F2E41',
@@ -16,6 +20,5 @@ module.exports = {
       }
     },
   },
-  plugins: [
-  ]
+  plugins: [],
 }

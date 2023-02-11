@@ -1,5 +1,4 @@
 @layer base {
-
     html {
         font-size: 62.5%;
         height: 100%;
@@ -250,13 +249,43 @@
     .topo {
       width: 100%;
       height: 22rem;
-      background-position: top;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     .efeito-topo {
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-image: url('../fundo preto transparente.webp');
     }
+
+    .conteudo span p {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .conteudo div h3 {
+      margin-bottom: 1.6rem;
+      color: #D2202C;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .conteudo div p {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      text-align: justify;
+    }
+
+    .objetivos h4 {
+      margin-bottom: 1rem;
+      color: #2F2E41;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
 
     /* Transparência -----------------------------------------------
     ---------------------------------------------------------------*/
@@ -386,9 +415,9 @@
     background-size: contain;
   }
 
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 

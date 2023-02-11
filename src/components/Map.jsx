@@ -7,7 +7,7 @@ import HighchartsReact from 'highcharts-react-official';
 const Map = ({ type, data, color = null, minColor = null, maxColor = null }) => {
 
   var pieColors = (function () {
-    var colors = ['#f3f3f3','#D2202C','#707070','#2F2E41'],
+    var colors = ['#dddddd','#D2202C','#707070','#2F2E41'],
         base = Highcharts.getOptions().colors[0],
         i;
 

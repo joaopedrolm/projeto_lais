@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function NavBar() {
     return (
@@ -11,7 +13,7 @@ export default function NavBar() {
                         <Link to="/">Início</Link>
                     </li>
                     <li className="plink">
-                        <Link to="/sobreNos">Sobre Nós</Link>
+                        <Link to="/">Sobre Nós</Link>
                     </li>
                     <li className="plink">
                         <Link to="/cursos">Cursos</Link>
@@ -23,7 +25,7 @@ export default function NavBar() {
                         <Link to="/transparencia">Transparência</Link>
                     </li> 
                     <li className="plink">
-                        <Link to="/contato">Contato</Link>
+                        <Link to="/">Contato</Link>
                     </li>
                 </ul>
 
@@ -35,6 +37,10 @@ export default function NavBar() {
                 <div className="space-x-5">  
                     <button className="rounded-3xl px-9 py-1 text-bot-color border border-bot-color">Entrar</button>
                     <button className="rounded-3xl px-9 py-1 bg-bot-color border-bot-color text-white font-medium">Cadastrar</button>
+                </div>
+
+                <div className="flex desktop:hidden">
+                    <FontAwesomeIcon icon={faBars} size='2xl' className="" />
                 </div>
             </nav>
         </header>

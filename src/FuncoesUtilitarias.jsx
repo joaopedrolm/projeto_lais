@@ -27,3 +27,14 @@ export function avaliacaoCondicional(avaliacao) {
     }
 }
 
+{/* Função para adicionar as letras "br" antes
+da UF dos estados, e aplicar um lower case no último. */}
+export function formataEstado(estado){
+  return "br-"+ estado.toLowerCase()
+}
+
+{/* Função para retornar os valores num formato brasileiro
+    com pontos a cada casa 3 casas decimais. */}
+export function formataCasaDecimal(valor) {
+  return valor?.toLocaleString('pt-BR');
+}

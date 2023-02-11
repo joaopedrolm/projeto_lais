@@ -2,7 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Map from "../components/Map"
-/* import "../components/mapChart" */
+import { formataEstado, formataCasaDecimal } from '../FuncoesUtilitarias'
 
 export default function Transparencia() {
 
@@ -86,9 +86,6 @@ export default function Transparencia() {
         getUsuariosEstado();
       }, []);
 
-    function formataEstado(estado){
-        return "br-"+ estado.toLowerCase()
-    }
 
     usuariosCurso.map((value) => {
         dadosCurso.push([value?.curso, value?.usuarios])
@@ -97,10 +94,6 @@ export default function Transparencia() {
     usuariosEstado.map((value) => {
         dadosEstado.push([formataEstado(value.estados), value.usuarios_totais])
     })
-
-    function formataCasaDecimal(valor) {
-        return valor?.toLocaleString('pt-BR');
-    }
 
     return (
         <div className='grid grid-cols-1 justify-items-center items-center caixa mb-64'>
